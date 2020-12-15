@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="ConnString">
+  <Profiles />
+  <Settings>
+    <Setting Name="Conn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=EmployerLodgingAndDeductions;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnFPM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=Funeral Policy Master;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnMLMAdvances" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=MicroLoansMaster_new_MLM;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnRMOrange" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=Recharge Master_Orange;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnRMBeMobile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=Recharge Master_BeMobile;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnFPMLocal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=Funeral Policy Master;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnMLMLocalAdvances" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=MicroLoansMaster_new_MLM;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnRMOrangeLocal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=Recharge Master_Orange;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnRMBeMobileLocal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=Recharge Master_BeMobile;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnLocal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=EmployerLodgingAndDeductions;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnMLMEducational" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=MicroLoansMaster_Educational;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+    <Setting Name="ConnMLMLocalEducational" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=192.168.1.5; DATABASE=MicroLoansMaster_Educational;user id=sa;password=SAdmin55;Connect Timeout=300</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Banking" targetNamespace="http://tempuri.org/Banking.xsd" xmlns:mstns="http://tempuri.org/Banking.xsd" xmlns="http://tempuri.org/Banking.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Banking" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Banking" msprop:Generator_DataSetName="Banking">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTBanking" msprop:Generator_UserTableName="DTBanking" msprop:Generator_RowDeletedName="DTBankingRowDeleted" msprop:Generator_TableClassName="DTBankingDataTable" msprop:Generator_RowChangedName="DTBankingRowChanged" msprop:Generator_RowClassName="DTBankingRow" msprop:Generator_RowChangingName="DTBankingRowChanging" msprop:Generator_RowEvArgName="DTBankingRowChangeEvent" msprop:Generator_RowEvHandlerName="DTBankingRowChangeEventHandler" msprop:Generator_TablePropName="DTBanking" msprop:Generator_TableVarName="tableDTBanking" msprop:Generator_RowDeletingName="DTBankingRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PayerID" msprop:Generator_UserColumnName="PayerID" msprop:Generator_ColumnPropNameInRow="PayerID" msprop:Generator_ColumnVarNameInTable="columnPayerID" msprop:Generator_ColumnPropNameInTable="PayerIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TransactionDate" msprop:Generator_UserColumnName="TransactionDate" msprop:Generator_ColumnPropNameInRow="TransactionDate" msprop:Generator_ColumnVarNameInTable="columnTransactionDate" msprop:Generator_ColumnPropNameInTable="TransactionDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ModeName" msprop:Generator_UserColumnName="ModeName" msprop:Generator_ColumnPropNameInRow="ModeName" msprop:Generator_ColumnVarNameInTable="columnModeName" msprop:Generator_ColumnPropNameInTable="ModeNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CapturedBy" msprop:Generator_UserColumnName="CapturedBy" msprop:Generator_ColumnPropNameInRow="CapturedBy" msprop:Generator_ColumnVarNameInTable="columnCapturedBy" msprop:Generator_ColumnPropNameInTable="CapturedByColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CapturedTime" msprop:Generator_UserColumnName="CapturedTime" msprop:Generator_ColumnPropNameInRow="CapturedTime" msprop:Generator_ColumnVarNameInTable="columnCapturedTime" msprop:Generator_ColumnPropNameInTable="CapturedTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BatchName" msprop:Generator_UserColumnName="BatchName" msprop:Generator_ColumnPropNameInRow="BatchName" msprop:Generator_ColumnVarNameInTable="columnBatchName" msprop:Generator_ColumnPropNameInTable="BatchNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BankingBatch" msprop:Generator_UserColumnName="BankingBatch" msprop:Generator_ColumnPropNameInRow="BankingBatch" msprop:Generator_ColumnVarNameInTable="columnBankingBatch" msprop:Generator_ColumnPropNameInTable="BankingBatchColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

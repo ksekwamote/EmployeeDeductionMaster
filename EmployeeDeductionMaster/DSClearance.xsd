@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSClearance" targetNamespace="http://tempuri.org/DSClearance.xsd" xmlns:mstns="http://tempuri.org/DSClearance.xsd" xmlns="http://tempuri.org/DSClearance.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSClearance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSClearance" msprop:Generator_DataSetName="DSClearance">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTClearance" msprop:Generator_UserTableName="DTClearance" msprop:Generator_RowDeletedName="DTClearanceRowDeleted" msprop:Generator_TableClassName="DTClearanceDataTable" msprop:Generator_RowChangedName="DTClearanceRowChanged" msprop:Generator_RowClassName="DTClearanceRow" msprop:Generator_RowChangingName="DTClearanceRowChanging" msprop:Generator_RowEvArgName="DTClearanceRowChangeEvent" msprop:Generator_RowEvHandlerName="DTClearanceRowChangeEventHandler" msprop:Generator_TablePropName="DTClearance" msprop:Generator_TableVarName="tableDTClearance" msprop:Generator_RowDeletingName="DTClearanceRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Text1" msprop:Generator_UserColumnName="Text1" msprop:Generator_ColumnPropNameInRow="Text1" msprop:Generator_ColumnVarNameInTable="columnText1" msprop:Generator_ColumnPropNameInTable="Text1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Text2" msprop:Generator_UserColumnName="Text2" msprop:Generator_ColumnPropNameInRow="Text2" msprop:Generator_ColumnVarNameInTable="columnText2" msprop:Generator_ColumnPropNameInTable="Text2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Text3" msprop:Generator_UserColumnName="Text3" msprop:Generator_ColumnPropNameInRow="Text3" msprop:Generator_ColumnVarNameInTable="columnText3" msprop:Generator_ColumnPropNameInTable="Text3Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Text4" msprop:Generator_UserColumnName="Text4" msprop:Generator_ColumnPropNameInRow="Text4" msprop:Generator_ColumnVarNameInTable="columnText4" msprop:Generator_ColumnPropNameInTable="Text4Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Text5" msprop:Generator_UserColumnName="Text5" msprop:Generator_ColumnPropNameInRow="Text5" msprop:Generator_ColumnVarNameInTable="columnText5" msprop:Generator_ColumnPropNameInTable="Text5Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Text6" msprop:Generator_UserColumnName="Text6" msprop:Generator_ColumnPropNameInRow="Text6" msprop:Generator_ColumnVarNameInTable="columnText6" msprop:Generator_ColumnPropNameInTable="Text6Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Text7" msprop:Generator_UserColumnName="Text7" msprop:Generator_ColumnPropNameInRow="Text7" msprop:Generator_ColumnVarNameInTable="columnText7" msprop:Generator_ColumnPropNameInTable="Text7Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Text8" msprop:Generator_UserColumnName="Text8" msprop:Generator_ColumnPropNameInRow="Text8" msprop:Generator_ColumnVarNameInTable="columnText8" msprop:Generator_ColumnPropNameInTable="Text8Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Text9" msprop:Generator_UserColumnName="Text9" msprop:Generator_ColumnPropNameInRow="Text9" msprop:Generator_ColumnVarNameInTable="columnText9" msprop:Generator_ColumnPropNameInTable="Text9Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
