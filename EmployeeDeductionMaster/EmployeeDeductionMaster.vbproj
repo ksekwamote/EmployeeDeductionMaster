@@ -202,14 +202,6 @@
     <Compile Include="CustomersPaidForList.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataSet1.Designer.vb">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="DataSet1.vb">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DepartmentList.designer.vb">
       <DependentUpon>DepartmentList.vb</DependentUpon>
     </Compile>
@@ -834,6 +826,12 @@
     <Compile Include="SwitchEmployers.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TerminationsAndAmendmentsCorrection.Designer.vb">
+      <DependentUpon>TerminationsAndAmendmentsCorrection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TerminationsAndAmendmentsCorrection.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Total Receipts Report.Designer.vb">
       <DependentUpon>Total Receipts Report.vb</DependentUpon>
     </Compile>
@@ -1445,6 +1443,9 @@
       <DependentUpon>SwitchEmployers.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="TerminationsAndAmendmentsCorrection.resx">
+      <DependentUpon>TerminationsAndAmendmentsCorrection.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Total Receipts Report.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Total Receipts Report.vb</DependentUpon>
@@ -1562,17 +1563,6 @@
     <None Include="ConnString.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>ConnString.Designer.vb</LastGenOutput>
-    </None>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
     <None Include="DSClearance.xsc">
       <DependentUpon>DSClearance.xsd</DependentUpon>

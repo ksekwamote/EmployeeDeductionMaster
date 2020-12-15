@@ -53,17 +53,6 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.1.5;Initial Catalog=EmployerLodgingAndDeductions;Persist Secu"& _ 
-            "rity Info=True;User ID=sa;Password=SAdmin55")>  _
-        Public ReadOnly Property EmployerLodgingAndDeductionsConnectionString() As String
-            Get
-                Return CType(Me("EmployerLodgingAndDeductionsConnectionString"),String)
-            End Get
-        End Property
     End Class
 End Namespace
 

@@ -13,10 +13,11 @@ Public Class EmployerList
     Public autoid As String
     Public emp As EmployerDetails
     Public ep As EmployerProducts
+    Public ter As TerminationsAndAmendmentsCorrection
 
     Private Sub loadEmployers(ByVal tform As String, ByVal con As SqlClient.SqlConnection)
         DataGridView1.DataSource = Nothing
-        Dim qry As String
+        Dim qry As String = ""
 
         If tform = "Customer" Then
             qry = "select * from Employers order by EmployerName ASC"
@@ -30,6 +31,8 @@ Public Class EmployerList
             qry = "select * from Employer order by Employer ASC"
         ElseIf tform = "Employer Products" Then
             qry = "select * from Employers order by EmployerName ASC"
+        ElseIf tform = "Terminations" Then
+            qry = "select AutoID,EmployerName from Employers order by EmployerName ASC"
         End If
 
         Dim cmd As New SqlClient.SqlCommand(qry, con)
@@ -100,6 +103,10 @@ Public Class EmployerList
                 ep.tbemployerid.Text = DataGridView1.CurrentRow.Cells(0).Value
                 ep.tbemployername.Text = DataGridView1.CurrentRow.Cells(1).Value
                 Close()
+            ElseIf whichform = "Terminations" Then
+                ter.tbemployerid.Text = DataGridView1.CurrentRow.Cells(0).Value
+                ter.tbemployername.Text = DataGridView1.CurrentRow.Cells(1).Value
+                Close()
             End If
         End If
     End Sub
@@ -116,6 +123,8 @@ Public Class EmployerList
         ElseIf whichform = "MLME" Then
             loadEmployers(whichform, conMLMEducational)
         ElseIf whichform = "Employer Products" Then
+            loadEmployers(whichform, con)
+        ElseIf whichform = "Terminations" Then
             loadEmployers(whichform, con)
         End If
     End Sub

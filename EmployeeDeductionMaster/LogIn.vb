@@ -233,67 +233,6 @@ Public Class LogIn
         vrl.Show()
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-
-        If CheckBox1.Checked = True Then
-            con = New SqlClient.SqlConnection(ConnString.Default.ConnLocal)
-            conFPM = New SqlClient.SqlConnection(ConnString.Default.ConnFPMLocal)
-            conMLMAdvances = New SqlClient.SqlConnection(ConnString.Default.ConnMLMLocalAdvances)
-            conMLMEducational = New SqlClient.SqlConnection(ConnString.Default.ConnMLMLocalEducational)
-            conRMOrange = New SqlClient.SqlConnection(ConnString.Default.ConnRMOrangeLocal)
-            conRMBeMobile = New SqlClient.SqlConnection(ConnString.Default.ConnRMBeMobileLocal)
-            conServer = New SqlClient.SqlConnection(ConnString.Default.Conn)
-            DatabaseLocation = "Local"
-        ElseIf CheckBox1.Checked = False Then
-            con = New SqlClient.SqlConnection(ConnString.Default.Conn)
-            conFPM = New SqlClient.SqlConnection(ConnString.Default.ConnFPM)
-            conMLMAdvances = New SqlClient.SqlConnection(ConnString.Default.ConnMLMAdvances)
-            conMLMEducational = New SqlClient.SqlConnection(ConnString.Default.ConnMLMEducational)
-            conRMOrange = New SqlClient.SqlConnection(ConnString.Default.ConnRMOrange)
-            conRMBeMobile = New SqlClient.SqlConnection(ConnString.Default.ConnRMBeMobile)
-            conServer = New SqlClient.SqlConnection("")
-            DatabaseLocation = "Server"
-        End If
-
-        GroupBox1.Enabled = True
-
-        'vrl.MenuStrip1.Items(4).Visible = True
-        'vrl.MenuStrip1.Items(4).Enabled = True
-        loadEmployers()
-        tbemployername.Text = ""
-        tbemployerid.Text = ""
-
-        If checkSettlementDetails() = False Then
-            saveSettlementLetterDesignDetails("TO: WHOM IT MAY CONCERN", "RE: LOAN ACCOUNT:", "OF ID NO:", "This serves to confirm that", "has an account with us.", "Please be informed that his/her outstanding balance as end of ", "If you intend to clear this account, kindly be requested to credit the following account.", "Thito holdings (Pty) Ltd, First National Bank, Account No: 62031160500 Main Branch Gaborone, or write a cheque payable to Thito Holdings (Pty) LTD.", "Please use your ID number as reference when making payment to enable your account to be credited accordingly.", "For more information do not hesitate to contact the undersigned.", "Yours faithfully", "Name Of Supervisor", "SENIOR CLIENT SERVICE OFFICER", "tshegofatso@thitoholdings.co.bw", "Please be informed that this letter is valid until ", 25, 15.0, "Please ensure the payment is made before", "to avoid additional interest charges.", 7)
-        End If
-
-        If checkClearanceDetails() = False Then
-            saveClearanceLetterDesignDetails("TO: WHOM IT MAY CONCERN", "RE: ACCOUNT - ", "OF ID NO. ", "This serves to confirm that ", " has fully cleared his/her loan account with us as end of ", "Therefore he/she does not owe us.", "For more information do not hesitate to contact the undersigned.", "Yours Faithfully", "Senior Client Services Officer")
-        End If
-
-        If checkEmployers() = False Then
-            LinkLabel1.Visible = True
-        End If
-
-        If checkUsers() = False Then
-            LinkLabel2.Visible = True
-        End If
-
-        If checkProducts() = False Then
-            saveProduct("Commission", 1, "Active", 1, 0, "Commission", "Yes", "Yes", "Yes", "No")
-        End If
-
-        If checkSupervisors() = False Then
-            LinkLabel3.Visible = True
-        End If
-
-        If checkStatus() = False Then
-            saveStatus("Active")
-            saveStatus("Cancelled")
-        End If
-
-    End Sub
-
     Private Sub LinkLabel3_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
         Dim vrl As New Supervisors
         ''vrl.MdiParent = mform

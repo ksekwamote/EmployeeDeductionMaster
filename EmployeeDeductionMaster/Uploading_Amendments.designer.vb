@@ -22,39 +22,39 @@ Partial Class Uploading_Amendments
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Uploading_Amendments))
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.cbchangelodgingmonth = New System.Windows.Forms.CheckBox
-        Me.cbchangedeductionendndate = New System.Windows.Forms.CheckBox
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.cbchangelodgingmonth = New System.Windows.Forms.CheckBox()
+        Me.cbchangedeductionendndate = New System.Windows.Forms.CheckBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -325,7 +325,7 @@ Partial Class Uploading_Amendments
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(699, 667)
+        Me.ClientSize = New System.Drawing.Size(699, 674)
         Me.Controls.Add(Me.cbchangedeductionendndate)
         Me.Controls.Add(Me.cbchangelodgingmonth)
         Me.Controls.Add(Me.Label4)
