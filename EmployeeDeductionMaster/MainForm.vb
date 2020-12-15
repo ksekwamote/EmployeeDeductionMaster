@@ -732,4 +732,10 @@ Public Class MainForm
         vrl.MdiParent = mform
         vrl.Show()
     End Sub
+
+    Private Sub TerminationsAndAmendmentCorrectionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TerminationsAndAmendmentCorrectionToolStripMenuItem.Click
+        Dim vrl As New TerminationsAndAmendmentsCorrection
+        vrl.MdiParent = mform
+        vrl.Show()
+    End Sub
 End Class

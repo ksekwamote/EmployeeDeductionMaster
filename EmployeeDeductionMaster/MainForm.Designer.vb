@@ -95,6 +95,7 @@ Partial Class MainForm
         Me.SalesAgentsCustomersToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalesReportToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.UplaodSalesCustomersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmployerChangesHistoryCustomerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdministratorsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SetupsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CountriesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -140,7 +141,7 @@ Partial Class MainForm
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.EmployerChangesHistoryCustomerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TerminationsAndAmendmentCorrectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -464,7 +465,7 @@ Partial Class MainForm
         '
         Me.DeductionFileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UploadActualDeductionsToolStripMenuItem1, Me.GenerateActualDeductionBreakdownToolStripMenuItem})
         Me.DeductionFileToolStripMenuItem.Name = "DeductionFileToolStripMenuItem"
-        Me.DeductionFileToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
+        Me.DeductionFileToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
         Me.DeductionFileToolStripMenuItem.Text = "Deduction File"
         '
         'UploadActualDeductionsToolStripMenuItem1
@@ -483,7 +484,7 @@ Partial Class MainForm
         '
         Me.LodgingFileToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UploadAmendmentAndTerminationsToolStripMenuItem, Me.GenerateLodgingFileToolStripMenuItem1, Me.UpdateAmendmentOrTerminationToolStripMenuItem})
         Me.LodgingFileToolStripMenuItem2.Name = "LodgingFileToolStripMenuItem2"
-        Me.LodgingFileToolStripMenuItem2.Size = New System.Drawing.Size(300, 22)
+        Me.LodgingFileToolStripMenuItem2.Size = New System.Drawing.Size(338, 22)
         Me.LodgingFileToolStripMenuItem2.Text = "Lodging File"
         '
         'UploadAmendmentAndTerminationsToolStripMenuItem
@@ -507,45 +508,45 @@ Partial Class MainForm
         'ProcessStopRefundsToolStripMenuItem1
         '
         Me.ProcessStopRefundsToolStripMenuItem1.Name = "ProcessStopRefundsToolStripMenuItem1"
-        Me.ProcessStopRefundsToolStripMenuItem1.Size = New System.Drawing.Size(300, 22)
+        Me.ProcessStopRefundsToolStripMenuItem1.Size = New System.Drawing.Size(338, 22)
         Me.ProcessStopRefundsToolStripMenuItem1.Text = "Process Stop Refunds"
         '
         'RemoveDuplicatesCustomerRecordsToolStripMenuItem1
         '
         Me.RemoveDuplicatesCustomerRecordsToolStripMenuItem1.Name = "RemoveDuplicatesCustomerRecordsToolStripMenuItem1"
-        Me.RemoveDuplicatesCustomerRecordsToolStripMenuItem1.Size = New System.Drawing.Size(300, 22)
+        Me.RemoveDuplicatesCustomerRecordsToolStripMenuItem1.Size = New System.Drawing.Size(338, 22)
         Me.RemoveDuplicatesCustomerRecordsToolStripMenuItem1.Text = "Remove Duplicates Customer Records"
         '
         'ChangeCustomersToolStripMenuItem
         '
         Me.ChangeCustomersToolStripMenuItem.Name = "ChangeCustomersToolStripMenuItem"
-        Me.ChangeCustomersToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
+        Me.ChangeCustomersToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
         Me.ChangeCustomersToolStripMenuItem.Text = "Change Customer's Employer"
         '
         'DeleteCustomersToolStripMenuItem
         '
         Me.DeleteCustomersToolStripMenuItem.Enabled = False
         Me.DeleteCustomersToolStripMenuItem.Name = "DeleteCustomersToolStripMenuItem"
-        Me.DeleteCustomersToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
+        Me.DeleteCustomersToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
         Me.DeleteCustomersToolStripMenuItem.Text = "Delete Customers"
         '
         'TransferReceiptsBetweenCompanyBooksToolStripMenuItem1
         '
         Me.TransferReceiptsBetweenCompanyBooksToolStripMenuItem1.Name = "TransferReceiptsBetweenCompanyBooksToolStripMenuItem1"
-        Me.TransferReceiptsBetweenCompanyBooksToolStripMenuItem1.Size = New System.Drawing.Size(300, 22)
+        Me.TransferReceiptsBetweenCompanyBooksToolStripMenuItem1.Size = New System.Drawing.Size(338, 22)
         Me.TransferReceiptsBetweenCompanyBooksToolStripMenuItem1.Text = "Transfer Receipts Between Company Books"
         '
         'TransferReceiptsBetweenCompanyBooksToolStripMenuItem
         '
         Me.TransferReceiptsBetweenCompanyBooksToolStripMenuItem.Name = "TransferReceiptsBetweenCompanyBooksToolStripMenuItem"
-        Me.TransferReceiptsBetweenCompanyBooksToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
+        Me.TransferReceiptsBetweenCompanyBooksToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
         Me.TransferReceiptsBetweenCompanyBooksToolStripMenuItem.Text = "Transfer Receipts Between Payment Modes"
         '
         'ReportsToolStripMenuItem
         '
         Me.ReportsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TotalReceiptsReportToolStripMenuItem, Me.CustomerEmployersToolStripMenuItem})
         Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
         Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'TotalReceiptsReportToolStripMenuItem
@@ -563,20 +564,20 @@ Partial Class MainForm
         'CustomersPaToolStripMenuItem
         '
         Me.CustomersPaToolStripMenuItem.Name = "CustomersPaToolStripMenuItem"
-        Me.CustomersPaToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
+        Me.CustomersPaToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
         Me.CustomersPaToolStripMenuItem.Text = "Customers Paid By Others"
         '
         'ListOfCustomersPaidForToolStripMenuItem
         '
         Me.ListOfCustomersPaidForToolStripMenuItem.Name = "ListOfCustomersPaidForToolStripMenuItem"
-        Me.ListOfCustomersPaidForToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
+        Me.ListOfCustomersPaidForToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
         Me.ListOfCustomersPaidForToolStripMenuItem.Text = "List Of Customers Paid For"
         '
         'SalesToolStripMenuItem
         '
         Me.SalesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalesAgentsCustomersToolStripMenuItem1, Me.SalesReportToolStripMenuItem1, Me.UplaodSalesCustomersToolStripMenuItem})
         Me.SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
-        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
+        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
         Me.SalesToolStripMenuItem.Text = "Sales"
         '
         'SalesAgentsCustomersToolStripMenuItem1
@@ -597,9 +598,15 @@ Partial Class MainForm
         Me.UplaodSalesCustomersToolStripMenuItem.Size = New System.Drawing.Size(241, 22)
         Me.UplaodSalesCustomersToolStripMenuItem.Text = "Upload Sales Agents Customers"
         '
+        'EmployerChangesHistoryCustomerToolStripMenuItem
+        '
+        Me.EmployerChangesHistoryCustomerToolStripMenuItem.Name = "EmployerChangesHistoryCustomerToolStripMenuItem"
+        Me.EmployerChangesHistoryCustomerToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
+        Me.EmployerChangesHistoryCustomerToolStripMenuItem.Text = "Employer And Group Changes History (Customer)"
+        '
         'AdministratorsToolStripMenuItem
         '
-        Me.AdministratorsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SetupsToolStripMenuItem, Me.AddUsersToolStripMenuItem, Me.ProductsToolStripMenuItem, Me.CommissionProductsToolStripMenuItem, Me.EmployersToolStripMenuItem, Me.ListOfCustomersToolStripMenuItem, Me.CompanyDetailsToolStripMenuItem, Me.SuperviorsToolStripMenuItem, Me.SettlementLetterDesignToolStripMenuItem, Me.ClearanceLedterDesignToolStripMenuItem, Me.UploadProductsToolStripMenuItem, Me.UploadEmployersToolStripMenuItem, Me.UploadSupervisorsToolStripMenuItem, Me.LocalDatabaseRefilToolStripMenuItem, Me.UploadTerminationsAndAmendmentsForCorrectionToolStripMenuItem, Me.ModeOfPaymentToolStripMenuItem, Me.CompanyBooksToolStripMenuItem, Me.CompanyBranchesToolStripMenuItem, Me.SalesAgentsToolStripMenuItem, Me.UploadDepartmentsToolStripMenuItem})
+        Me.AdministratorsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SetupsToolStripMenuItem, Me.AddUsersToolStripMenuItem, Me.ProductsToolStripMenuItem, Me.CommissionProductsToolStripMenuItem, Me.EmployersToolStripMenuItem, Me.ListOfCustomersToolStripMenuItem, Me.CompanyDetailsToolStripMenuItem, Me.SuperviorsToolStripMenuItem, Me.SettlementLetterDesignToolStripMenuItem, Me.ClearanceLedterDesignToolStripMenuItem, Me.UploadProductsToolStripMenuItem, Me.UploadEmployersToolStripMenuItem, Me.UploadSupervisorsToolStripMenuItem, Me.LocalDatabaseRefilToolStripMenuItem, Me.UploadTerminationsAndAmendmentsForCorrectionToolStripMenuItem, Me.ModeOfPaymentToolStripMenuItem, Me.CompanyBooksToolStripMenuItem, Me.CompanyBranchesToolStripMenuItem, Me.SalesAgentsToolStripMenuItem, Me.UploadDepartmentsToolStripMenuItem, Me.TerminationsAndAmendmentCorrectionToolStripMenuItem})
         Me.AdministratorsToolStripMenuItem.Name = "AdministratorsToolStripMenuItem"
         Me.AdministratorsToolStripMenuItem.Size = New System.Drawing.Size(97, 20)
         Me.AdministratorsToolStripMenuItem.Text = "Administrators"
@@ -874,11 +881,11 @@ Partial Class MainForm
         Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(119, 17)
         Me.ToolStripStatusLabel3.Text = "ToolStripStatusLabel3"
         '
-        'EmployerChangesHistoryCustomerToolStripMenuItem
+        'TerminationsAndAmendmentCorrectionToolStripMenuItem
         '
-        Me.EmployerChangesHistoryCustomerToolStripMenuItem.Name = "EmployerChangesHistoryCustomerToolStripMenuItem"
-        Me.EmployerChangesHistoryCustomerToolStripMenuItem.Size = New System.Drawing.Size(338, 22)
-        Me.EmployerChangesHistoryCustomerToolStripMenuItem.Text = "Employer And Group Changes History (Customer)"
+        Me.TerminationsAndAmendmentCorrectionToolStripMenuItem.Name = "TerminationsAndAmendmentCorrectionToolStripMenuItem"
+        Me.TerminationsAndAmendmentCorrectionToolStripMenuItem.Size = New System.Drawing.Size(362, 22)
+        Me.TerminationsAndAmendmentCorrectionToolStripMenuItem.Text = "Terminations And Amendment Correction"
         '
         'MainForm
         '
@@ -1020,4 +1027,5 @@ Partial Class MainForm
     Friend WithEvents UplaodSalesCustomersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UploadBankBranchesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmployerChangesHistoryCustomerToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TerminationsAndAmendmentCorrectionToolStripMenuItem As ToolStripMenuItem
 End Class

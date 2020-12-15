@@ -256,7 +256,8 @@ Public Class Uploading_Amendments
 
     Private Sub loadProducts(ByVal EmployerID As Integer)
         ''Dim qry As String = "select AutoID,Products, Products as TotalAmendments, Products as Count, Products as TerminationsCount from Products Where Status = 'Active' order by AllocationOrder ASC"
-        Dim qry As String = "select EmployerProducts.AutoID,Products, Products as TotalAmendments, Products as Count, Products as TerminationsCount from EmployerProducts inner join Products on EmployerProducts.ProductID = Products.AutoID where EmployerProducts.Status = 'Active' and Products.Status = 'Active' and EmployerID = '" & EmployerID & "' order by OrderNumber ASC"
+        ''Dim qry As String = "select EmployerProducts.AutoID,Products, Products as TotalAmendments, Products as Count, Products as TerminationsCount from EmployerProducts inner join Products on EmployerProducts.ProductID = Products.AutoID where EmployerProducts.Status = 'Active' and Products.Status = 'Active' and EmployerID = '" & EmployerID & "' order by OrderNumber ASC"
+        Dim qry As String = "select EmployerProducts.ProductID,Products, Products as TotalAmendments, Products as Count, Products as TerminationsCount from EmployerProducts inner join Products on EmployerProducts.ProductID = Products.AutoID where EmployerProducts.Status = 'Active' and Products.Status = 'Active' and EmployerID = '" & EmployerID & "' order by OrderNumber ASC"
         DataGridView2.DataSource = Nothing
         BindingNavigator1.BindingSource = Nothing
 

@@ -42,11 +42,6 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member>
-<member name="T:EmployeeDeductionMaster.DataSet1">
-<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member>
 <member name="T:EmployeeDeductionMaster.DSReceipt">
 <summary>
 Represents a strongly typed in-memory cache of data.

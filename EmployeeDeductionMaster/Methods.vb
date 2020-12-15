@@ -373,7 +373,6 @@ Module Methods
         End Try
     End Sub
 
-
     Public Function getProductsCount(ByVal adate As Date, ByVal productid As String, ByVal EmployerID As Integer) As Integer
         Dim qry As String = "select Count(Amount) from TerminationsAndAmendments where ProductID = '" & productid & "' and ForMonth = '" & adate & "' and Amount > 0.00 and EmployerID = '" & EmployerID & "'"
 
@@ -10212,5 +10211,34 @@ Module Methods
         End Try
         Return perc
     End Function
+
+    Public Sub saveLodgingChanges(ByVal CustomerID As String, ByVal Amount As Decimal, ByVal ForMonth As Date, ByVal SavedTime As Date, ByVal ProductID As Integer, ByVal EmployerID As Integer)
+        Dim transactioninsert As SqlClient.SqlTransaction
+        Try
+            Dim qryinsert As String = "Insert into LodgingChanges values ('" & CustomerID & "','" & Amount & "','" & ForMonth & "','" & SavedTime & "','" & ProductID & "','" & EmployerID & "')"
+            Dim cmdinsert As New SqlClient.SqlCommand(qryinsert, con)
+            If con.State = ConnectionState.Closed Then
+                con.Open()
+            End If
+
+            transactioninsert = con.BeginTransaction()
+            cmdinsert.Transaction = transactioninsert
+
+            If cmdinsert.ExecuteNonQuery() Then
+                transactioninsert.Commit()
+            End If
+
+        Catch ex As Exception
+            If con.State = ConnectionState.Open Then
+                con.Close()
+            End If
+            MessageBox.Show(ex.Message, " saveLodgingChanges()", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(ex.StackTrace, " saveLodgingChanges()", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            If con.State = ConnectionState.Open Then
+                con.Close()
+            End If
+        End Try
+    End Sub
 
 End Module
