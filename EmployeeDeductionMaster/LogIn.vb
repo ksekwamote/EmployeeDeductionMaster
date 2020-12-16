@@ -6,6 +6,8 @@ Public Class LogIn
     Dim useravailable, closewindow As String
     Dim ds As New DataSet
     Public vrl As New MainForm
+    Public recoverPass As New RecoverPassword  'declare password recovery form
+
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
@@ -232,6 +234,15 @@ Public Class LogIn
         ''vrl.MdiParent = mform
         vrl.Show()
     End Sub
+
+    Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+        Me.Close()
+
+        recoverPass.Show() 'show password recovery form when 'forgot password' is clicked
+
+    End Sub
+
+
 
     Private Sub LinkLabel3_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
         Dim vrl As New Supervisors

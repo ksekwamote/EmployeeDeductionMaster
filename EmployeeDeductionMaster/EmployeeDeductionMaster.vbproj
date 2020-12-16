@@ -104,6 +104,11 @@
     <Compile Include="AddUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddUserDetails.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddUserDetails.resx</DependentUpon>
+    </Compile>
     <Compile Include="AgentsList.designer.vb">
       <DependentUpon>AgentsList.vb</DependentUpon>
     </Compile>
@@ -266,6 +271,24 @@
       <DependentUpon>FIllingDocuments.vb</DependentUpon>
     </Compile>
     <Compile Include="FIllingDocuments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.vb">
+      <DependentUpon>ForgotPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecoverPassword.Designer.vb">
+      <DependentUpon>RecoverPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecoverPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.vb">
+      <DependentUpon>ResetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IdentityTypeList.designer.vb">
@@ -1009,6 +1032,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddUserDetails.resx">
       <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddUserDetails.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="AgentsList.resx">
       <DependentUpon>AgentsList.vb</DependentUpon>
@@ -1103,6 +1128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FIllingDocuments.resx">
       <DependentUpon>FIllingDocuments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecoverPassword.resx">
+      <DependentUpon>RecoverPassword.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IdentityTypeList.resx">
       <DependentUpon>IdentityTypeList.vb</DependentUpon>
@@ -1390,6 +1421,9 @@
     <EmbeddedResource Include="RequestSettlement.resx">
       <DependentUpon>RequestSettlement.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReverseCancelledChequeToPending.resx">
       <SubType>Designer</SubType>
