@@ -17,6 +17,11 @@ Module Methods
     Public supervisorid As Integer
     Public DatabaseLocation As String
 
+
+    Public verificationCode As String
+    Public verificationEmail As String
+
+
     Public branchid As Integer
     Public RMOBranchID, RMBBranchID, MLMABranchID, MLMEBranchID As String
 

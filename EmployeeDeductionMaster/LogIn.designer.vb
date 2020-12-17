@@ -24,6 +24,7 @@ Partial Class LogIn
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LogIn))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.tbemployerid = New System.Windows.Forms.TextBox()
@@ -39,7 +40,6 @@ Partial Class LogIn
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -66,6 +66,16 @@ Partial Class LogIn
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Login Details"
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.Location = New System.Drawing.Point(170, 244)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(154, 17)
+        Me.LinkLabel4.TabIndex = 10
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "Forgot your Password?"
         '
         'LinkLabel3
         '
@@ -209,16 +219,6 @@ Partial Class LogIn
         Me.Button3.TabIndex = 9
         Me.Button3.Text = "Proceed"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'LinkLabel4
-        '
-        Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.Location = New System.Drawing.Point(170, 244)
-        Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(154, 17)
-        Me.LinkLabel4.TabIndex = 10
-        Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Forgot your Password?"
         '
         'LogIn
         '

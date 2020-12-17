@@ -30,6 +30,8 @@ Partial Class ResetPassword
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -99,11 +101,43 @@ Partial Class ResetPassword
         Me.Button1.Text = "Reset Password"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.CheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal
+        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CheckBox1.Location = New System.Drawing.Point(529, 196)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(52, 27)
+        Me.CheckBox1.TabIndex = 9
+        Me.CheckBox1.Text = "Show"
+        Me.CheckBox1.UseVisualStyleBackColor = False
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.CheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal
+        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.CheckBox2.Location = New System.Drawing.Point(529, 240)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(52, 27)
+        Me.CheckBox2.TabIndex = 10
+        Me.CheckBox2.Text = "Show"
+        Me.CheckBox2.UseVisualStyleBackColor = False
+        '
         'ResetPassword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(727, 450)
+        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -128,4 +162,6 @@ Partial Class ResetPassword
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents CheckBox2 As CheckBox
 End Class

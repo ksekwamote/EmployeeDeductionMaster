@@ -20,4 +20,28 @@
     Private Sub ResetPassword_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            CheckBox1.Text = "Hide"
+            TextBox1.PasswordChar = ""
+        Else
+
+            CheckBox1.Text = "Show"
+            TextBox1.PasswordChar = "*"
+
+        End If
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        If CheckBox2.Checked Then
+            CheckBox2.Text = "Hide"
+            TextBox2.PasswordChar = ""
+        Else
+
+            CheckBox2.Text = "Show"
+            TextBox2.PasswordChar = "*"
+
+        End If
+    End Sub
 End Class
